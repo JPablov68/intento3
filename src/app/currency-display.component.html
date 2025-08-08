@@ -1,0 +1,8 @@
+<div>
+  <h3>Precio del producto:</h3>
+  <ul>
+    <li>🇲🇽 {{ mxnPrice }} MXN</li>
+    <li *ngIf="usdPrice">🇺🇸 {{ usdPrice | number:'1.2-2' }} USD</li>
+    <li *ngIf="eurPrice">🇪🇺 {{ eurPrice | number:'1.2-2' }} EUR</li>
+  </ul>
+</div>
